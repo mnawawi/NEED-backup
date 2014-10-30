@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:background="@drawable/bc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff2b1902" android:id="@+id/textViewSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter SMS Message : " />
+    <EditText android:gravity="top" android:id="@+id/editTextSMS" android:background="@drawable/smsbc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="5" android:inputType="textMultiLine" />
+    <Button android:layout_gravity="center" android:id="@+id/buttonSend" android:background="@drawable/button_selector10" android:layout_width="138.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

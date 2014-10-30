@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3" android:versionName="1.0" package="com.appslipperneed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:icon="@drawable/needicon" android:allowBackup="true">
+        <activity android:label="@string/app_name" android:name="com.manish.inapppurchase.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.manish.inapppurchase.Webview_design" />
+        <activity android:name="com.manish.inapppurchase.Webview_design1" />
+        <activity android:name="com.manish.inapppurchase.Webview_design_a" />
+        <activity android:name="com.manish.inapppurchase.ListViewImagesActivity" />
+        <activity android:name="com.manish.inapppurchase.MainActivity" />
+        <activity android:name="com.manish.inapppurchase.mukadepan" />
+        <activity android:name="com.manish.inapppurchase.Objective" />
+        <activity android:name="com.manish.inapppurchase.Visimisi" />
+        <activity android:name="com.manish.inapppurchase.Welcome" />
+        <activity android:name="com.manish.inapppurchase.SampleActivity" />
+        <activity android:name="com.manish.inapppurchase.Prizing" />
+        <activity android:name="com.manish.inapppurchase.MainActivity1" />
+        <activity android:name="com.manish.inapppurchase.MainActivity2" />
+        <activity android:name="com.manish.inapppurchase.SampleActivity1" />
+        <activity android:name="com.manish.inapppurchase.MolpayActivity" />
+        <activity android:name="com.manish.inapppurchase.LinktoDonate" />
+        <activity android:name="com.manish.inapppurchase.Molpay_Terms_Conds" />
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+        <activity android:name="com.molpay.molpaylib.MOLPayActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.manish.inapppurchase.HomePage" />
+        <activity android:name="com.manish.inapppurchase.SMS" />
+        <activity android:label="@string/title_activity_activity_one" android:name="com.manish.inapppurchase.ActivityOne" />
+        <activity android:label="@string/title_activity_activity_two" android:name="com.manish.inapppurchase.ActivityTwo" />
+        <activity android:label="@string/title_activity_activity_webview" android:name="com.manish.inapppurchase.WebviewChat" />
+        <activity android:label="@string/title_activity_activity_askneed" android:name="com.manish.inapppurchase.AskNEED" />
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <service android:name="com.manish.inapppurchase.BillingService" />
+        <receiver android:name="com.manish.inapppurchase.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

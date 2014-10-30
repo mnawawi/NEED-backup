@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">N.E.E.D</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+     
+     <string name="title_activity_activity_webview">ActivityTwo</string>
+    <string name="title_activity_activity_one">ActivityOne</string>
+    <string name="title_activity_activity_two">ActivityTwo</string>
+    <string name="title_activity_activity_askneed">ActivityTwo</string>
+
+</resources>
